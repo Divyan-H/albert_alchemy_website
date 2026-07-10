@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ---- Color tokens: purple > magenta > orange alchemical gradient ---- */
+  --color-void: #0c0716;
+  --color-void-soft: #150f28;
+  --color-ink: #faf7ff;
+  --color-ink-soft: #f1ecfa;
+  --color-violet: #6a21d6;
+  --color-violet-light: #9b5cf0;
+  --color-magenta: #c23bd0;
+  --color-ember: #ff6a1a;
+  --color-gold: #ffb648;
+  --color-text-dark: #150c29;
+  --color-text-muted: #5c5270;
+  --color-text-onvoid: #cabfe6;
+  --color-text-onvoid-dim: #8b7fac;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-line-dark: rgba(21, 12, 41, 0.1);
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --breakpoint-xs: 420px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ember);
+  color: var(--color-ink);
+}
+
+/* Focus visibility kept intentional and on-brand rather than removed */
+:focus-visible {
+  outline: 2px solid var(--color-ember);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.alchemy-gradient-text {
+  background: linear-gradient(100deg, var(--color-violet-light) 0%, var(--color-magenta) 45%, var(--color-ember) 75%, var(--color-gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.alchemy-gradient-bg {
+  background: linear-gradient(120deg, var(--color-violet) 0%, var(--color-magenta) 50%, var(--color-ember) 100%);
+}
+
+.cta-gradient-bg {
+  background: linear-gradient(100deg, var(--color-ember) 0%, var(--color-gold) 100%);
+}
+
+.alchemy-border-glow {
+  position: relative;
+}
+.alchemy-border-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--color-violet-light), var(--color-ember));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
