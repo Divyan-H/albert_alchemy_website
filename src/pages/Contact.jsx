@@ -2,7 +2,9 @@ import { useState } from "react";
 import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
+import SEO from "../components/SEO";
 import { brand, contact } from "../data/content";
+import { contactSchema } from "../data/schema";
 import { Mail, Phone, MessageCircle, Send, CheckCircle2 } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "../components/SocialIcons";
 
@@ -35,6 +37,12 @@ export default function Contact() {
 
   return (
     <PageTransition>
+      <SEO
+        title="Contact Us | Albert Digital Alchemy"
+        description={contact.subheading}
+        path="contact"
+        schema={contactSchema}
+      />
       <section className="relative overflow-hidden bg-void pt-36 pb-20 sm:pt-44 sm:pb-24">
         <AuroraField startingGap={110} breathingRange={4} />
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 text-center">

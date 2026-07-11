@@ -2,11 +2,19 @@ import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 import { blog } from "../data/content";
+import { blogSchema } from "../data/schema";
 
 export default function Blog() {
   return (
     <PageTransition>
+      <SEO
+        title="Blog | Albert Digital Alchemy"
+        description={blog.subheading}
+        path="blog"
+        schema={blogSchema}
+      />
       <section className="relative overflow-hidden bg-void pt-36 pb-28 sm:pt-44 sm:pb-36 min-h-[80vh] flex items-center">
         <AuroraField startingGap={110} breathingRange={4} />
         <div className="relative mx-auto max-w-3xl px-5 sm:px-8 text-center">

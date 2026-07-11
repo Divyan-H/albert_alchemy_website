@@ -3,7 +3,9 @@ import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
 import ServiceCard from "../components/ServiceCard";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 import { services } from "../data/content";
+import { servicesSchema } from "../data/schema";
 import {
   BadgeCheck,
   ClipboardCheck,
@@ -17,6 +19,12 @@ const whyIcons = [BadgeCheck, ClipboardCheck, Fingerprint, TrendingUp, InfinityI
 export default function Services() {
   return (
     <PageTransition>
+      <SEO
+        title="Digital Marketing Services | Albert Digital Alchemy"
+        description="SEO, AI SEO, Google Ads, Social Media Marketing, Branding, and Web Development services from Albert Digital Alchemy."
+        path="services"
+        schema={servicesSchema}
+      />
       <section className="relative overflow-hidden bg-void pt-36 pb-24 sm:pt-44 sm:pb-28">
         <AuroraField startingGap={110} breathingRange={4} />
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 text-center">

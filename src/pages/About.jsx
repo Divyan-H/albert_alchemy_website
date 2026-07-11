@@ -1,12 +1,20 @@
 import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
+import SEO from "../components/SEO";
 import { about } from "../data/content";
+import { aboutSchema } from "../data/schema";
 import founderPhoto from "../assets/founder.jpeg";
 
 export default function About() {
   return (
     <PageTransition>
+      <SEO
+        title="About Us | Albert Digital Alchemy"
+        description={about.intro}
+        path="about"
+        schema={aboutSchema}
+      />
       <section className="relative overflow-hidden bg-void pt-36 pb-24 sm:pt-44 sm:pb-28">
         <AuroraField startingGap={110} breathingRange={4} />
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 text-center">

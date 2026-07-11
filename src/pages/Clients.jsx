@@ -2,7 +2,9 @@ import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 import { clients } from "../data/content";
+import { clientsSchema } from "../data/schema";
 
 const images = import.meta.glob("../assets/clients/*", { eager: true, import: "default" });
 
@@ -14,6 +16,12 @@ function resolveClientImage(file) {
 export default function Clients() {
   return (
     <PageTransition>
+      <SEO
+        title="Our Clients | Albert Digital Alchemy"
+        description="Brands and businesses that have worked with Albert Digital Alchemy."
+        path="clients"
+        schema={clientsSchema}
+      />
       <section className="relative overflow-hidden bg-void pt-36 pb-24 sm:pt-44 sm:pb-28">
         <AuroraField startingGap={110} breathingRange={4} />
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 text-center">

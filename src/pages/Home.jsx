@@ -7,12 +7,20 @@ import LogoMarquee from "../components/LogoMarquee";
 import Testimonials from "../components/Testimonials";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 import { home, services } from "../data/content";
+import { homeSchema } from "../data/schema";
 import { Check } from "lucide-react";
 
 export default function Home() {
   return (
     <PageTransition>
+      <SEO
+        title="Albert Digital Alchemy | Digital Marketing Company"
+        description={home.hero.subheadline}
+        path=""
+        schema={homeSchema}
+      />
       {/* HERO */}
       <section className="relative overflow-hidden bg-void pt-36 pb-28 sm:pt-44 sm:pb-36">
         <AuroraField />

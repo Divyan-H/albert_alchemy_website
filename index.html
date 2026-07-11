@@ -31,6 +31,45 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Site-wide structured data (present on every load, before React mounts).
+         Page-specific schema (WebPage, Service, Person, BreadcrumbList, etc.)
+         is injected per-route by src/components/SEO.jsx. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.albertdigitalalchemy.com/#organization",
+      "name": "Albert Digital Alchemy",
+      "alternateName": "Digital Alchemy",
+      "url": "https://www.albertdigitalalchemy.com/",
+      "logo": "https://www.albertdigitalalchemy.com/logo-full.png",
+      "image": "https://www.albertdigitalalchemy.com/logo-full.png",
+      "description": "Albert Digital Alchemy is a full-service Digital Marketing Company delivering SEO, AI SEO, Google Ads, Social Media Marketing, Branding, and Web Development Services.",
+      "email": "contact@albertdigitalalchemy.com",
+      "telephone": "+918489076521",
+      "sameAs": [
+        "https://www.instagram.com/thealbertdigitalalchemy/",
+        "https://www.facebook.com/profile.php?id=61577045944675&ref=PROFILE_EDIT_xav_ig_profile_page_web",
+        "https://whatsapp.com/channel/0029VbCUTNnG8l5Mw18FNR1d"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "S Arun Albert Isaac",
+        "jobTitle": "Founder & CEO"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.albertdigitalalchemy.com/#website",
+      "name": "Albert Digital Alchemy",
+      "url": "https://www.albertdigitalalchemy.com/",
+      "publisher": { "@id": "https://www.albertdigitalalchemy.com/#organization" }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
