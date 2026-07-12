@@ -1,0 +1,21 @@
+# Required for react-router's BrowserRouter to work on Hostinger (Apache).
+# Without this, a direct visit or refresh on a route like /about or /services
+# returns a real 404 from the server, because there's no actual /about file —
+# the whole site is one index.html and JavaScript decides what to render.
+#
+# This rule says: if the request isn't for a real file or folder that exists,
+# serve index.html instead (with an HTTP 200, not a redirect), and let
+# react-router read the URL and render the matching page client-side.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Let real files/folders (css, js, images, favicon, etc.) be served as-is.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else falls through to index.html.
+  RewriteRule ^ index.html [L]
+</IfModule>

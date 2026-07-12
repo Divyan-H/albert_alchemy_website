@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -37,13 +37,13 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="min-h-screen flex flex-col">
         <ScrollToTop />
         <Navbar />
         <AnimatedRoutes />
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

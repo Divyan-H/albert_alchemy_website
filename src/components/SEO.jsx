@@ -28,7 +28,10 @@ export default function SEO({ title, description, path = "", schema }) {
     let prevCanonicalHref = null;
     if (canonicalTag) {
       prevCanonicalHref = canonicalTag.getAttribute("href");
-      canonicalTag.setAttribute("href", `https://www.albertdigitalalchemy.com/${path}`);
+      const url = path
+        ? `https://www.albertdigitalalchemy.com/${path}`
+        : `https://www.albertdigitalalchemy.com/`;
+      canonicalTag.setAttribute("href", url);
     }
 
     const schemas = Array.isArray(schema) ? schema : schema ? [schema] : [];

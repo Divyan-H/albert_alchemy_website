@@ -7,12 +7,12 @@ export const brand = {
   shortName: "Digital Alchemy",
   tagline: "Digital Marketing Company",
   website: "www.albertdigitalalchemy.com",
-  email: "contact@albertdigitalalchemy.com",
+  email: "info@albertdigitalalchemy.com",
   phone: "+91 8489076521",
   phoneHref: "+918489076521",
   instagram: "https://www.instagram.com/thealbertdigitalalchemy/",
   facebook:
-    "https://www.facebook.com/profile.php?id=61577045944675&ref=PROFILE_EDIT_xav_ig_profile_page_web",
+    "https://www.facebook.com/people/Albert-Digital-Alchemy/61577045944675/?ref=PROFILE_EDIT_xav_ig_profile_page_web",
   whatsappChannel: "https://whatsapp.com/channel/0029VbCUTNnG8l5Mw18FNR1d",
 };
 
