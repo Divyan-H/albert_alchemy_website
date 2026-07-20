@@ -29,7 +29,7 @@ export const home = {
   hero: {
     headline: "Results-Driven Digital Marketing Company That Helps Businesses Grow Online",
     subheadline:
-      "Albert Digital Alchemy is a full-service Digital Marketing Company delivering SEO, AI SEO, Google Ads, Social Media Marketing, Branding, and Web Development Services to help businesses generate leads, increase visibility, and scale revenue.",
+      "Albert Digital Alchemy is a leading Digital Marketing Company in Chennai offering SEO, AI SEO, Social Media Marketing, Google Ads, Branding, Web Development, and Website Optimization services across Tamil Nadu.",
     primaryCta: "Get a Free Consultation",
     secondaryCta: "View Our Services",
     // Added: short eyebrow label for hero, consistent with brand name's alchemy motif
@@ -79,6 +79,90 @@ export const home = {
     { value: "8", label: "Core service disciplines" },
     { value: "360°", label: "Strategy to execution" },
     { value: "100%", label: "Transparent reporting" },
+  ],
+  // SEO content blocks — humanised, readable service descriptions for on-page SEO
+  seoContent: [
+    {
+      id: "digital-marketing-strategy",
+      title: "Digital Marketing Strategy",
+      paragraphs: [
+        "Every successful business needs a clear marketing plan. Our digital marketing strategy services help businesses attract the right audience and generate quality leads.",
+        "As a trusted Digital Marketing Company in Chennai, we study your market, competitors, and customer behaviour. We then build a strategy around your specific goals — not a one-size-fits-all template.",
+        "We track performance and refine campaigns using real data, so every decision your business makes is grounded in what's actually working. That's how you get growth that lasts instead of short-term spikes.",
+        "Digital marketing is becoming more data-driven by the day. Businesses that have a proper strategy in place will consistently outpace those that are still guessing.",
+      ],
+      internalLink: { label: "About our approach", to: "/about" },
+    },
+    {
+      id: "social-media-marketing",
+      title: "Social Media Marketing",
+      paragraphs: [
+        "Social media is one of the fastest ways to build genuine trust with your audience. As a Social Media Marketing Agency in Chennai, we create content that stops the scroll and sparks real engagement.",
+        "We manage Facebook, Instagram, LinkedIn, and more — building campaigns that grow brand visibility and get customers talking, not just watching.",
+        "Showing up consistently on social keeps your brand top of mind. With AI reshaping how people discover content, brands that show up with real value are the ones that keep growing.",
+      ],
+      internalLink: { label: "View Social Media Marketing services", to: "/services" },
+    },
+    {
+      id: "google-seo-services",
+      title: "Google SEO Services",
+      paragraphs: [
+        "Our Google SEO services help businesses climb the search rankings and attract traffic that's genuinely interested in what they offer.",
+        "We handle keyword research, technical SEO, content optimisation, and local SEO. We also work on website speed and usability — because Google rewards pages that are fast, helpful, and easy to use.",
+        "SEO takes time, but the results are lasting. Businesses that invest in it now build a steady stream of free, qualified traffic that no ad budget can replicate.",
+      ],
+      internalLink: { label: "Explore our SEO services", to: "/services" },
+    },
+    {
+      id: "ai-seo-services",
+      title: "AI SEO Services",
+      paragraphs: [
+        "Search is changing fast. AI-driven engines are reshaping how people find information, and most businesses haven't caught up yet.",
+        "Our AI SEO, AEO, and GEO services help your business show up on platforms like ChatGPT, Gemini, and Google AI Overviews — not just on the traditional results page.",
+        "We use advanced tools to improve how your content performs across both search and AI platforms. Getting in early gives your business a real edge before the rest of the market catches on.",
+      ],
+      internalLink: { label: "Learn more about AI SEO", to: "/services" },
+    },
+    {
+      id: "google-meta-ads",
+      title: "Google and Meta Ads Management",
+      paragraphs: [
+        "Paid advertising gets your business in front of the right people quickly. Our Google and Facebook Meta Ads management focuses on generating real results — not just impressions and clicks.",
+        "We run Google Search Ads, Display Ads, Facebook Ads, and Instagram campaigns, continuously reviewing audience behaviour to sharpen performance and reduce wasted spend.",
+        "We also keep an eye on competitor activity through the Facebook Ads Library. As ad platforms lean more on AI automation, having a sharp human strategy behind your campaigns matters more than ever.",
+      ],
+      internalLink: { label: "Contact us for a campaign review", to: "/contact" },
+    },
+    {
+      id: "branding-services",
+      title: "Branding Services",
+      paragraphs: [
+        "A strong brand makes customers choose you without a second thought. As a Branding Agency in Chennai, we build identities that are distinctive, consistent, and built to last.",
+        "Our branding work covers strategy, logo design, messaging, and brand positioning. We make sure everything looks and sounds the same across every platform your customers interact with.",
+        "People buy from brands they trust. Investing in how your business looks and communicates pays off every time a potential customer decides who to go with.",
+      ],
+      internalLink: { label: "See our client work", to: "/clients" },
+    },
+    {
+      id: "web-development-services",
+      title: "Web Development Services",
+      paragraphs: [
+        "Your website is usually the first thing a potential customer sees. As a Web Development Company in Chennai, we build sites that are modern, fast, and straightforward to navigate.",
+        "We prioritise performance, security, and user experience in every build. Our websites are designed to convert visitors into leads — not just to look good on a screen.",
+        "Technology moves quickly. Businesses that keep their websites current are the ones that continue to earn trust from both customers and search engines.",
+      ],
+      internalLink: { label: "View Web Development services", to: "/services" },
+    },
+    {
+      id: "website-optimization",
+      title: "Website Optimisation Services",
+      paragraphs: [
+        "A slow or clunky website costs you customers before they've even read a word. Our website optimisation services fix the technical issues that hold your site back.",
+        "We dig into the data, find what's slowing things down, and make improvements that help both users and search engines get more out of your site.",
+        "Google takes site performance seriously as a ranking factor. A well-optimised website tends to rank higher, load faster, and convert more of the visitors it attracts.",
+      ],
+      internalLink: { label: "Read our latest insights", to: "/blog" },
+    },
   ],
 };
 

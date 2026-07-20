@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -29,7 +30,7 @@ function AnimatedRoutes() {
         <Route path="/clients" element={<Clients />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );

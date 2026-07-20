@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <PageTransition>
       <SEO
-        title="Albert Digital Alchemy | Digital Marketing Company"
-        description={home.hero.subheadline}
+        title="Digital Marketing Company in Chennai | SEO, Social Media & Web Development"
+        description="Albert Digital Alchemy is a leading Digital Marketing Company in Chennai offering SEO, AI SEO, Social Media Marketing, Google Ads, Branding, Web Development, and Website Optimization services across Tamil Nadu."
         path=""
         schema={homeSchema}
       />
@@ -154,6 +154,47 @@ export default function Home() {
               </span>
             ))}
           </Reveal>
+        </div>
+      </section>
+
+      {/* SEO CONTENT — SERVICE BLOCKS */}
+      <section className="relative bg-ink py-20 sm:py-28" id="services-overview">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <Reveal className="mb-14 max-w-2xl">
+            <span className="flex items-center gap-2.5 font-mono text-xs tracking-[0.18em] uppercase text-ember mb-4">
+              <span className="h-px w-8 bg-ember/60" />
+              What we do — in plain terms
+            </span>
+            <h2 className="font-display text-text-dark text-3xl sm:text-4xl leading-tight">
+              Digital Marketing Services in Chennai
+            </h2>
+          </Reveal>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-14">
+            {home.seoContent.map((block, i) => (
+              <Reveal key={block.id} delay={i * 0.05}>
+                <article id={block.id}>
+                  <h3 className="font-display text-text-dark text-xl sm:text-2xl mb-4 leading-snug">
+                    {block.title}
+                  </h3>
+                  <div className="space-y-3">
+                    {block.paragraphs.map((para, j) => (
+                      <p key={j} className="text-text-muted text-sm sm:text-base leading-relaxed">
+                        {para}
+                      </p>
+                    ))}
+                  </div>
+                  <Link
+                    to={block.internalLink.to}
+                    className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-ember hover:text-ember/80 transition-colors duration-200 group"
+                  >
+                    {block.internalLink.label}
+                    <span className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
+                  </Link>
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
