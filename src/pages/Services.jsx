@@ -52,7 +52,7 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.items.map((s, i) => (
-              <ServiceCard key={s.id} title={s.title} description={s.description} icon={s.icon} index={i} />
+              <ServiceCard key={s.id} id={s.id} title={s.title} description={s.description} icon={s.icon} index={i} />
             ))}
           </div>
         </div>

@@ -201,7 +201,7 @@ export const services = {
     },
     {
       id: "social",
-      title: "Social Media Marketing Agency",
+      title: "Social Media Marketing",
       description:
         "Content creation, social media management, audience engagement, and performance-driven campaigns.",
       icon: "sparkles",
@@ -222,28 +222,28 @@ export const services = {
     },
     {
       id: "ads",
-      title: "Google Ads Management",
+      title: "Google & Meta Ads Management",
       description:
         "Search, display, remarketing, and performance marketing campaigns focused on lead generation and ROI.",
       icon: "target",
     },
     {
       id: "branding",
-      title: "Branding Agency Services",
+      title: "Branding Services",
       description:
         "Brand identity creation, logo strategy, brand positioning, and visual communication solutions.",
       icon: "flask",
     },
     {
       id: "web-dev-company",
-      title: "Web Development Company Services",
+      title: "Web Development Services",
       description:
         "Professional website design, responsive development, WordPress websites, landing pages, and business websites.",
       icon: "code",
     },
     {
       id: "web-dev",
-      title: "Web Development Services",
+      title: "Website Optimization Services",
       description:
         "Website optimization, speed improvements, security enhancements, and conversion-focused user experiences.",
       icon: "bolt",

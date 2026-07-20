@@ -120,7 +120,7 @@ export default function Home() {
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.items.slice(0, 6).map((s, i) => (
-              <ServiceCard key={s.id} title={s.title} description={s.description} icon={s.icon} index={i} />
+              <ServiceCard key={s.id} id={s.id} title={s.title} description={s.description} icon={s.icon} index={i} />
             ))}
           </div>
           <Reveal className="mt-10 flex justify-center">
