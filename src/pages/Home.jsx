@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <PageTransition>
       <SEO
-        title="Digital Marketing Company in Chennai | SEO, Social Media & Web Development"
-        description="Albert Digital Alchemy is a leading Digital Marketing Company in Chennai offering SEO, AI SEO, Social Media Marketing, Google Ads, Branding, Web Development, and Website Optimization services across Tamil Nadu."
+        title="Digital Marketing Company in Chennai | Complete Solutions"
+        description="Albert Digital Alchemy is a Digital Marketing Company in Chennai offering SEO, AI SEO, Google Ads, Social Media, Branding & Web Development across Tamil Nadu."
         path=""
         schema={homeSchema}
       />
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
           <Reveal className="mt-10 flex justify-center">
             <Button to="/services" variant="outlineDark">
-              View Our Services
+              Explore Our Digital Marketing Services
             </Button>
           </Reveal>
         </div>
@@ -153,6 +153,14 @@ export default function Home() {
                 <Check size={14} className="text-ember" /> {k}
               </span>
             ))}
+          </Reveal>
+          <Reveal delay={0.3} className="mt-8">
+            <Link
+              to="/services"
+              className="text-sm text-ember hover:text-white transition-colors font-semibold underline-offset-2 hover:underline"
+            >
+              Explore our full range of digital marketing services in Chennai &rarr;
+            </Link>
           </Reveal>
         </div>
       </section>

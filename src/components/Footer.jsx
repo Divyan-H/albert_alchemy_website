@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MessageCircle } from "lucide-react";
-import { InstagramIcon, FacebookIcon } from "./SocialIcons";
+import { InstagramIcon, FacebookIcon, YouTubeIcon, LinkedInIcon } from "./SocialIcons";
 import { brand, nav } from "../data/content";
 import logoFull from "../assets/logo-full-trimmed.png";
 
@@ -72,6 +72,24 @@ export default function Footer() {
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-white/40 hover:text-white transition-colors"
               >
                 <FacebookIcon size={16} />
+              </a>
+              <a
+                href={brand.youtube}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-white/40 hover:text-white transition-colors"
+              >
+                <YouTubeIcon size={16} />
+              </a>
+              <a
+                href={brand.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-white/40 hover:text-white transition-colors"
+              >
+                <LinkedInIcon size={16} />
               </a>
             </div>
           </div>

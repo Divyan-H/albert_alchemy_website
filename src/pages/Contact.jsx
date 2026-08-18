@@ -6,7 +6,7 @@ import SEO from "../components/SEO";
 import { brand, contact } from "../data/content";
 import { contactSchema } from "../data/schema";
 import { Mail, Phone, MessageCircle, Send, CheckCircle2 } from "lucide-react";
-import { InstagramIcon, FacebookIcon } from "../components/SocialIcons";
+import { InstagramIcon, FacebookIcon, YouTubeIcon, LinkedInIcon } from "../components/SocialIcons";
 
 const services = [
   "Digital Marketing Strategy",
@@ -121,6 +121,24 @@ export default function Contact() {
                   className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 hover:border-white/40 transition-colors"
                 >
                   <FacebookIcon size={17} />
+                </a>
+                <a
+                  href={brand.youtube}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="YouTube"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 hover:border-white/40 transition-colors"
+                >
+                  <YouTubeIcon size={17} />
+                </a>
+                <a
+                  href={brand.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 hover:border-white/40 transition-colors"
+                >
+                  <LinkedInIcon size={17} />
                 </a>
               </div>
             </div>

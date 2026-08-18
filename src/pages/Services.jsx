@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
 import Reveal from "../components/Reveal";
@@ -20,8 +21,8 @@ export default function Services() {
   return (
     <PageTransition>
       <SEO
-        title="Digital Marketing Services | Albert Digital Alchemy"
-        description="SEO, AI SEO, Google Ads, Social Media Marketing, Branding, and Web Development services from Albert Digital Alchemy."
+        title="Digital Marketing Services in Chennai | Albert Digital Alchemy"
+        description="Explore Digital Marketing Services in Chennai from Albert Digital Alchemy — a trusted Digital Marketing Agency offering SEO, AI SEO, Google Ads, Social Media, Branding & Web Development."
         path="services"
         schema={servicesSchema}
       />
@@ -40,9 +41,10 @@ export default function Services() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-2xl mx-auto text-text-onvoid text-base sm:text-lg leading-relaxed">
-              Eight disciplines, one accountable team — each service is built to
-              connect with the others so strategy, creative, and execution move
-              in the same direction.
+              As a full-service Digital Marketing Agency in Chennai, we combine
+              strategy, creative, and execution across eight disciplines — so
+              every service connects and moves your business in the same
+              direction.
             </p>
           </Reveal>
         </div>
@@ -55,6 +57,18 @@ export default function Services() {
               <ServiceCard key={s.id} id={s.id} title={s.title} description={s.description} icon={s.icon} index={i} />
             ))}
           </div>
+          <Reveal className="mt-10 text-center">
+            <p className="text-text-muted text-sm">
+              Want to know who&apos;s behind these services?{" "}
+              <Link to="/about" className="text-ember hover:text-violet transition-colors font-semibold underline-offset-2 hover:underline">
+                Learn about our team
+              </Link>
+              {" or "}
+              <Link to="/contact" className="text-ember hover:text-violet transition-colors font-semibold underline-offset-2 hover:underline">
+                get in touch for a free consultation
+              </Link>.
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -88,13 +102,14 @@ export default function Services() {
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 py-20 text-center">
           <Reveal>
             <h2 className="font-display text-white text-3xl sm:text-4xl mb-6">
-              Not sure which service fits?
+              Not sure which service fits your business?
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="text-white/85 max-w-xl mx-auto mb-9">
               Tell us where your business stands today and where you want it to
-              go — we'll map the right mix of services to get there.
+              go — we'll map the right mix of{" "}
+              <strong>online marketing</strong> services to get there.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

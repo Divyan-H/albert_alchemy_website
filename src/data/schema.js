@@ -33,7 +33,7 @@ function pageUrl(path) {
   return path ? `${SITE_URL}/${path}` : `${SITE_URL}/`;
 }
 
-const sameAs = [brand.instagram, brand.facebook, brand.whatsappChannel].filter(Boolean);
+const sameAs = [brand.instagram, brand.facebook, brand.whatsappChannel, brand.youtube, brand.linkedin].filter(Boolean);
 
 export const organizationSchema = {
   "@context": "https://schema.org",

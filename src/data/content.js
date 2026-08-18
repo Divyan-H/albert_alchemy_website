@@ -14,6 +14,8 @@ export const brand = {
   facebook:
     "https://www.facebook.com/people/Albert-Digital-Alchemy/61577045944675/?ref=PROFILE_EDIT_xav_ig_profile_page_web",
   whatsappChannel: "https://whatsapp.com/channel/0029VbCUTNnG8l5Mw18FNR1d",
+  youtube: "https://youtube.com/@albertdigitalalchemyofficial?si=f1RdUMRJBXLOWcgI",
+  linkedin: "https://www.linkedin.com/in/albert-digital-alchemy-416621422/",
 };
 
 export const nav = [
@@ -55,7 +57,7 @@ export const home = {
     ],
   },
   servicesPreview: {
-    heading: "Services Preview",
+    heading: "Our Digital Marketing Services",
     items: [
       "Social Media Marketing Agency Services",
       "Google SEO & AI SEO Optimization",
@@ -66,8 +68,8 @@ export const home = {
     ],
   },
   seoSection: {
-    heading: "Built for Search. Built for Growth.", // Added heading, body is verbatim
-    body: "Looking for a reliable Digital Marketing Company that delivers measurable growth? Our team specializes in Google SEO, AI SEO, paid advertising, branding, and high-performance websites. We help businesses improve search rankings, attract qualified traffic, and convert visitors into customers.",
+    heading: "The Best Digital Marketing Company in Chennai for Measurable Growth.", // Updated heading for keyword relevance
+    body: "Looking for a trusted Digital Marketing Agency that delivers real, measurable results? Our team specializes in Google SEO, AI SEO, paid advertising, branding, and high-performance websites. We help businesses across Tamil Nadu improve search rankings, attract qualified traffic, and convert visitors into customers.",
   },
   cta: {
     heading: "Ready to grow your business?", // Added heading; body copy verbatim below
@@ -190,7 +192,7 @@ export const about = {
 };
 
 export const services = {
-  heading: "Digital Marketing Services",
+  heading: "Digital Marketing Services in Chennai",
   items: [
     {
       id: "strategy",
@@ -279,6 +281,7 @@ export const clients = [
   { name: "Anima & Manima Farms", file: "anima-manima-farms.png", industry: "Agriculture & Farming" },
   { name: "Thalir Kaanagam Atelier", file: "thalir-kaanagam.jpeg", industry: "Furniture & Craft" },
   { name: "Passikuu Ruccii", file: "passikuu-ruccii.png", industry: "Food & Beverage" },
+  { name: "Garudaa Relocations", file: "garudaa-relocations.png", industry: "Moving & Relocation" },
 ];
 
 // Testimonials — the client asked to source real reviews from their Google
