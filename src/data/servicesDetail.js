@@ -3,6 +3,8 @@ export const servicesDetail = {
     title: "Digital Marketing Strategy",
     eyebrow: "The Blueprint for Growth",
     description: "Before you spend a single rupee on ads or SEO, you need a plan. We design custom roadmaps based on real market data, competitor research, and actual audience behavior.",
+    metaTitle: "Digital Marketing Strategy in Chennai | Albert Digital Alchemy",
+    metaDescription: "Get a data-backed digital marketing strategy in Chennai — market research, audience profiling, and smart budget allocation that drives real growth.",
     image: "/images/service-strategy.png",
     fallbackColor: "linear-gradient(135deg, #6a21d6, #c23bd0)",
     whatWeDo: [
@@ -42,6 +44,8 @@ export const servicesDetail = {
     title: "Social Media Marketing",
     eyebrow: "Build a Community, Not Just a Feed",
     description: "Social media is where your customers verify if you're a real, active, and trustworthy business. We create content that stops the scroll and starts real conversations.",
+    metaTitle: "Social Media Marketing in Chennai | Albert Digital Alchemy",
+    metaDescription: "Albert Digital Alchemy is a social media marketing agency in Chennai creating scroll-stopping content and managing Instagram, Facebook & LinkedIn.",
     image: "/images/service-social-media.png",
     fallbackColor: "linear-gradient(135deg, #c23bd0, #ff6a1a)",
     whatWeDo: [
@@ -81,6 +85,8 @@ export const servicesDetail = {
     title: "Google SEO Services",
     eyebrow: "Earn Free, Compounds-Over-Time Traffic",
     description: "Paid ads stop working the second you turn off the budget. Good SEO builds an asset that drives high-intent, qualified traffic to your website 24/7.",
+    metaTitle: "Google SEO Services in Chennai | Albert Digital Alchemy",
+    metaDescription: "Rank higher on Google with SEO services in Chennai — technical audits, keyword research, on-page optimization, and local SEO for lasting traffic.",
     image: "/images/service-seo.png",
     fallbackColor: "linear-gradient(135deg, #ff6a1a, #ffb648)",
     whatWeDo: [
@@ -120,6 +126,8 @@ export const servicesDetail = {
     title: "AI SEO Services",
     eyebrow: "Optimise for the Next Era of Search",
     description: "Search is changing. People are turning to conversational search tools like ChatGPT, Claude, Perplexity, and Google AI Overviews. We make sure your brand is the answer they recommend.",
+    metaTitle: "AI SEO Services in Chennai | Albert Digital Alchemy",
+    metaDescription: "Get cited by ChatGPT, Perplexity, Gemini & Google AI Overviews. Albert Digital Alchemy offers AI SEO, GEO & AEO services in Chennai.",
     image: "/images/service-ai-seo.png",
     fallbackColor: "linear-gradient(135deg, #6a21d6, #ff6a1a)",
     whatWeDo: [
@@ -159,6 +167,8 @@ export const servicesDetail = {
     title: "Google & Meta Ads Management",
     eyebrow: "Turn Advertising Spend Into Scalable Profit",
     description: "Paid advertising is the fastest way to get leads. We design, launch, and manage campaigns that target high-intent customers, keeping your customer acquisition cost as low as possible.",
+    metaTitle: "Google & Meta Ads Management in Chennai | Albert Digital Alchemy",
+    metaDescription: "Google Ads and Meta Ads management in Chennai focused on lowering cost-per-lead — strategic campaigns and transparent ROAS reporting.",
     image: "/images/service-ads.png",
     fallbackColor: "linear-gradient(135deg, #e55ef2, #ff6a1a)",
     whatWeDo: [
@@ -198,6 +208,8 @@ export const servicesDetail = {
     title: "Branding Services",
     eyebrow: "Stand Out in a Crowded Market",
     description: "A logo isn't a brand; it's just a symbol. We build comprehensive visual and verbal identities that communicate trust, premium quality, and make customers pick you over competitors.",
+    metaTitle: "Branding Agency in Chennai | Albert Digital Alchemy",
+    metaDescription: "Albert Digital Alchemy is a branding agency in Chennai building visual identities and brand positioning that make customers choose you first.",
     image: "/images/service-branding.png",
     fallbackColor: "linear-gradient(135deg, #ff9a3d, #ffb648)",
     whatWeDo: [
@@ -237,6 +249,8 @@ export const servicesDetail = {
     title: "Web Development Services",
     eyebrow: "Your Best Sales Representative, 24/7",
     description: "Your website is usually the first impression your business makes. We design and code clean, responsive, custom websites that load fast, look premium, and turn visitors into customers.",
+    metaTitle: "Web Development Company in Chennai | Albert Digital Alchemy",
+    metaDescription: "Custom, fast, responsive websites built by a web development company in Chennai — clean code and lead-gen features that convert visitors.",
     image: null, // Custom CSS / Icon layout
     fallbackColor: "linear-gradient(135deg, #a56fff, #b78bff)",
     whatWeDo: [
@@ -276,6 +290,8 @@ export const servicesDetail = {
     title: "Website Optimization Services",
     eyebrow: "Plug the Leaks in Your Digital Funnel",
     description: "A slow website loses customers before they even read what you offer. We optimize your speed, user flow, and mobile experience to boost conversion rates and search rankings.",
+    metaTitle: "Website Optimization Services in Chennai | Albert Digital Alchemy",
+    metaDescription: "Improve Core Web Vitals, speed, and conversions with website optimization services in Chennai — compression, code cleanup, and UX fixes.",
     image: null, // Custom CSS / Icon layout
     fallbackColor: "linear-gradient(135deg, #6a21d6, #ff6a1a)",
     whatWeDo: [

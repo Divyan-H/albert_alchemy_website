@@ -44,8 +44,8 @@ export default function ServiceDetail() {
   return (
     <PageTransition>
       <SEO
-        title={`${detail.title} | Albert Digital Alchemy`}
-        description={detail.description}
+        title={detail.metaTitle || `${detail.title} | Albert Digital Alchemy`}
+        description={detail.metaDescription || detail.description}
         path={`services/${serviceId}`}
         image={detail.image}
       />
