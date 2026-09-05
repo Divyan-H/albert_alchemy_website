@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
 import AuroraField from "../components/AuroraField";
+import SEO from "../components/SEO";
 
 export default function NotFound() {
   return (
     <PageTransition>
+      <SEO
+        title="Page Not Found | Albert Digital Alchemy"
+        description="The page you're looking for doesn't exist. Head back to Albert Digital Alchemy's homepage or explore our digital marketing services."
+        noindex
+      />
       <section className="relative overflow-hidden bg-void min-h-screen flex items-center justify-center">
         <AuroraField />
         <div className="relative mx-auto max-w-2xl px-5 sm:px-8 text-center">

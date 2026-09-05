@@ -47,6 +47,7 @@ export default function ServiceDetail() {
         title={`${detail.title} | Albert Digital Alchemy`}
         description={detail.description}
         path={`services/${serviceId}`}
+        image={detail.image}
       />
 
       {/* HERO SECTION */}

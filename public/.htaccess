@@ -3,19 +3,30 @@
 # returns a real 404 from the server, because there's no actual /about file —
 # the whole site is one index.html and JavaScript decides what to render.
 #
-# This rule says: if the request isn't for a real file or folder that exists,
-# serve index.html instead (with an HTTP 200, not a redirect), and let
-# react-router read the URL and render the matching page client-side.
+# Unknown URLs fall through to Apache's normal 404 handling (see
+# ErrorDocument below) instead of being rewritten to index.html with a 200,
+# so search engines see a genuine 404 instead of a "soft 404" on broken/typo
+# URLs — react-router's NotFound page still renders because ErrorDocument
+# serves index.html as the body of that 404 response.
+ErrorDocument 404 /index.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Canonical host: force https + www so the site is only ever indexed under
+  # one hostname. Without this, https://albertdigitalalchemy.com/ (no www)
+  # served the exact same content as https://www.albertdigitalalchemy.com/
+  # with its own 200 response — duplicate content under two hostnames.
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^ https://www.albertdigitalalchemy.com%{REQUEST_URI} [L,R=301]
 
   # Let real files/folders (css, js, images, favicon, etc.) be served as-is.
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Everything else falls through to index.html.
-  RewriteRule ^ index.html [L]
+  # Only known react-router routes resolve to index.html with a 200.
+  RewriteRule ^(about|services(/[a-z0-9-]+)?|clients|blog|contact)/?$ index.html [L]
+  RewriteRule ^$ index.html [L]
 </IfModule>

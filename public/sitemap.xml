@@ -2,26 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.albertdigitalalchemy.com/</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.albertdigitalalchemy.com/about</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.albertdigitalalchemy.com/services</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.albertdigitalalchemy.com/services/strategy</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/social</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/seo</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/ai-seo</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/ads</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/branding</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/web-dev-company</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.albertdigitalalchemy.com/services/web-dev</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.albertdigitalalchemy.com/clients</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.albertdigitalalchemy.com/blog</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.albertdigitalalchemy.com/contact</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
